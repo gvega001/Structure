@@ -30,9 +30,11 @@ int main()
 	cout << "Rectangle Width:" << rectangle.width << endl;
 
 	cout << "Area of the rectangle:" << rectangle.length * rectangle.width << endl;
+	printf("Size of the rectangle structure: %d", sizeof(rectangle));
 
 	Triangle triangle;
 	triangle.base = 4;
 	triangle.height = 5;
 	cout << "Triangle Areas is: " << (.5 * triangle.base) * triangle.height << endl;
+	printf("Size of the triangle structure: %d", sizeof(triangle));
 }
