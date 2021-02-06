@@ -13,14 +13,15 @@ struct Rectangle
 
 struct Triangle
 {
-	int side;
 	int height;
+	int base;
 };
 
 
 int main()
 {
     cout << "Structure Rectangle!\n";
+	
 	Rectangle rectangle;
 	rectangle.length = 5;
 	rectangle.width = 5;
@@ -29,5 +30,9 @@ int main()
 	cout << "Rectangle Width:" << rectangle.width << endl;
 
 	cout << "Area of the rectangle:" << rectangle.length * rectangle.width << endl;
-	
+
+	Triangle triangle;
+	triangle.base = 4;
+	triangle.height = 5;
+	cout << "Triangle Areas is: " << (.5 * triangle.base) * triangle.height << endl;
 }
