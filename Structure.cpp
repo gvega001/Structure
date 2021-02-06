@@ -7,8 +7,8 @@ using namespace std;
 
 struct Rectangle
 {
-	int length =4;
-	int width =8;
+	int length;
+	int width;
 };
 
 struct Triangle
@@ -22,6 +22,8 @@ int main()
 {
     cout << "Structure Rectangle!\n";
 	Rectangle rectangle;
+	rectangle.length = 5;
+	rectangle.width = 5;
 	
 	cout << "Rectangle Length:" << rectangle.length << endl;
 	cout << "Rectangle Width:" << rectangle.width << endl;
